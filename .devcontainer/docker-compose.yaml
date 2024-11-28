@@ -1,0 +1,10 @@
+version: "3.6"
+services:
+  app:
+    container_name: vim-slime_matplotlib-bug
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ..:/workspace
+    working_dir: /workspace

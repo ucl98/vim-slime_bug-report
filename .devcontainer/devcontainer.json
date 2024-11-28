@@ -1,0 +1,6 @@
+{
+    "name": "vim-slime_matplotlib-bug",
+    "dockerComposeFile": "docker-compose.yaml",
+    "service": "app",
+    "workspaceFolder": "/workspace"
+}
