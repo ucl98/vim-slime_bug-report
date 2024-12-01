@@ -7,11 +7,9 @@
 1. `cd .devcontainer`
 2. `docker-compose up -d`
 3. `docker exec -it vim-slime_matplotlib-bug /bin/bash`
-4. `chmod +x neovim-startup.sh`
-5. `./neovim-startup.sh`
-6. `tmux`
-7. `nvim test.py`
-8. `space i p`
+4. `tmux`
+5. `nvim test.py`
+6. `space i p`
 
 #### Issue
 IPython opens. When `plt.show()` is executed in the IPython window (switch to it with `ctrl a l`), the plot will be displayed.
