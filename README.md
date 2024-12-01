@@ -7,15 +7,24 @@
 1. `cd .devcontainer`
 2. `docker-compose up -d`
 3. `docker exec -it vim-slime_matplotlib-bug /bin/bash`
-4. `chmod +x setup.sh`
-5. `./setup.sh`
 4. `tmux`
 5. `nvim test.py`
-6. `space i p`
+6. `ctrl a v`
+7. `ipyhton`
+8. `ctrl a h`
 
-#### Issue
-IPython opens. When `plt.show()` is executed in the IPython window (switch to it with `ctrl a l`), the plot will be displayed.
-However when instead vim-slime is used, it will cause an error and no image is displayed (Repeat step 7. and 8. and send the command `plt.show()` with `ctrl v ctrl v` or simply uncomment `plt.show()`),
+#### Working
+9. `ctrl c ctrl c`
+10. `ctrl a l`
+11. `plt.show()`
+
+#### Bug
+9. `ctrl c ctrl c`
+10. `7 j`
+11. `ctrl c ctrl c`
+
+#### Recording
+![](bug-reproduction.gif)
 
 #### Error-Message
 ```shell
