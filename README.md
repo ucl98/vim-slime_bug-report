@@ -7,6 +7,8 @@
 1. `cd .devcontainer`
 2. `docker-compose up -d`
 3. `docker exec -it vim-slime_matplotlib-bug /bin/bash`
+4. `chmod +x setup.sh`
+5. `./setup.sh`
 4. `tmux`
 5. `nvim test.py`
 6. `space i p`
