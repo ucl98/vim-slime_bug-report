@@ -5,6 +5,7 @@ services:
       context: .
       dockerfile: ./Dockerfile
     volumes:
+      - ../tmux:/root/.config/tmux 
       - ../nvim:/root/.config/nvim 
       - ..:/workspace
     working_dir: /workspace

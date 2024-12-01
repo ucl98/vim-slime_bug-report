@@ -26,6 +26,6 @@ local map_keys = vim.keymap.set
 map_keys(
 	"n",
 	"<leader>ip",
-	[[<cmd>silent !tmux split-window -h 'python3' && tmux select-pane -L<CR>]],
+	[[<cmd>silent !tmux split-window -h python3'.expand('%:p') && tmux select-pane -L<CR>]],
 	{ noremap = true, silent = true }
 )
